@@ -15,14 +15,14 @@ ActiveRecord::Schema.define(version: 20180317020207) do
   create_table "authors", force: :cascade do |t|
     t.string "name"
     t.string "description"
-    t.string "image_url_url"
+    t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "posts", force: :cascade do |t|
     t.string "title"
-    t.text "boody"
+    t.text "body"
     t.string "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
